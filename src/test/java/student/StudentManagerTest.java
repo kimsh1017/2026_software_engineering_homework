@@ -18,6 +18,8 @@ public class StudentManagerTest {
     @Test
     @Order(1)
     void testAddStudent() {
+        // given
+
         // when
         studentManager.addStudent(testStudentName);
 
@@ -28,6 +30,8 @@ public class StudentManagerTest {
     @Test
     @Order(2)
     void testAddDuplicatedStudent() {
+        // given
+
         // when & then
         assertThrows(IllegalArgumentException.class, () -> studentManager.addStudent(testStudentName));
     }
@@ -35,6 +39,8 @@ public class StudentManagerTest {
     @Test
     @Order(3)
     void testRemoveStudent() {
+        // given
+
         // when
         studentManager.removeStudent(testStudentName);
 
