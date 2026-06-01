@@ -10,6 +10,7 @@ public class StudentManagerTest {
     private static StudentManager studentManager;
     private final static String testStudentName = "userA";
 
+    // 테스트 수행 전에 먼저 수행됩니다.
     @BeforeAll
     static void beforeAll() {
         studentManager = new StudentManager();
